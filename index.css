@@ -1,0 +1,405 @@
+::-webkit-scrollbar{
+    display: none;
+}
+html{
+    scroll-behavior:smooth;
+}
+/* =====================================
+   BODY
+===================================== */
+body{
+    font-family:Arial, sans-serif;
+    overflow:auto;
+}
+@media screen and (max-width:900px){
+    nav li{
+        display:none;
+        min-width:790px;
+    }
+    .middle{
+    margin:10px 25px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    }
+}
+/* =====================================
+   NAVIGATION
+===================================== */
+nav{
+    box-shadow: 0px 8px 25px rgba(0,0,0,.12);
+    margin:10px 5px;
+    height:70px;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:10;
+    border-radius:100px;
+    padding:0 40px;
+    transition:120ms;
+    flex-wrap: nowrap;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:205px;
+    background-color: #F5F7FA;
+}
+nav a{
+    display: flex;
+    text-decoration: none;
+}
+nav:hover{
+    transform:scale(1.009);
+}
+nav a:hover{
+    color:#87CEEB;
+    transform:scale(1.2);
+}
+a{
+    display: flex;
+    justify-content:center;
+    text-decoration:none;
+    color:#1F2937;
+    border-radius:400px;
+    font-family:Arial, sans-serif;
+    font-weight:700;
+    transition:120ms;
+    font-size:30px;
+}
+ul{
+    display:flex;
+    gap:60px;
+    justify-content:center;
+    list-style-type:none;
+}
+h2{
+    color:#1F2937;
+    display:flex;
+    align-items:0;
+    margin:0;
+    align-items:center;
+    font-size:30px;
+
+}
+.logo{
+    display:flex;
+    border-radius:50%;
+    width:50px;
+    height:50px;
+    object-fit: cover;
+}
+button{
+    display:flex;
+    justify-content:center;
+    flex-direction: row;
+    align-items:center;
+    padding:10px 10px;
+    background-color:#1F2937;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    transition:120ms;
+}
+button:hover{
+    transform:scale(1.2);
+}
+#choice{
+    justify-content: center;
+    background-color:white;
+    color: rgb(49, 49, 49);
+    width:180px;
+    height:33px;
+    border-radius:50px;
+    border-width:2px;
+    font-size:18px;
+    font-weight: 700;
+    transition:120ms;
+}
+#option:hover{
+    transform:scale(1.06);
+    color:#87CEEB;
+    background-color: #87CEEB;
+    cursor:pointer;
+}
+select{
+    transition: 150ms;
+}
+#choice:hover{
+    transform:scale(1.06);
+    color:#87CEEB;
+    border-color: #87CEEB;
+    cursor:pointer;
+}
+.middle ul{
+    flex:1 1 auto;
+    display:flex;
+    justify-content:center;
+    min-width:0px;
+    list-style:none;
+    margin:0;
+    padding:0;
+    gap:30px;
+}
+.left{
+    display:flex;
+    justify-content: left;
+    align-items:center;
+    gap:12px;
+    flex-shrink: 0;
+}
+.right{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    flex-shrink: 0;
+}
+/* =====================================
+   HERO SECTION
+===================================== */
+h1{
+    font-family:Arial, Helvetica, sans-serif;
+}
+p{
+    font-family:"Anton", sans-serif;
+    font-weight:700;
+    font-size:large;
+    margin:0px -10px;
+}
+#hhh{
+    scroll-margin-top: 90px;
+}
+section{
+    font-size:normal;
+    position:relative;
+    bottom:-120px;
+
+}
+.hero-intro{
+    margin:0px 40px;
+    background-color:#87CEEB;
+    border-radius:30px;
+    backdrop-filter:blur(15px);
+    padding:3rem;
+    box-shadow:0px 0px 3px rgba(110, 198, 255, 0.3);
+    max-width:400px;
+    min-width:250px;
+    width:90%;
+    text-decoration: none;
+    border:none;
+    box-sizing:border-box;
+    transition:170ms;
+}
+.hero-intro:hover{
+    box-shadow:0px 0px 10px 25px rgba(110, 198, 255, 0.3);
+    transform:scale(1.06);
+    border-color: #6EC6FF;
+    cursor:default;
+}
+/* =====================================
+   ABOUT SECTION
+==================================== */
+.about{
+    position:relative;
+    left:500px;
+    margin:-60px 40px;
+    background-color:#87CEEB;
+    border-radius:30px;
+    backdrop-filter:blur(15px);
+    padding:3rem;
+    box-shadow:0px 0px 3px rgba(110, 198, 255, 0.3);
+    max-width:450px;
+    min-width:250px;
+    width:90%;
+    text-decoration: none;
+    border:none;
+    box-sizing:border-box;
+    transition:170ms;
+}
+.about:hover{
+    box-shadow:0px 0px 10px 25px rgba(110, 198, 255, 0.3);
+    transform:scale(1.06);
+    border-color: #6EC6FF;
+    cursor:default;
+}
+#hhh1{
+    scroll-margin-top: 90px;
+}
+/* =====================================
+   SKILLS
+===================================== */
+.skills{
+    margin:-60px 40px;
+    background-color:#87CEEB;
+    border-radius:30px;
+    backdrop-filter:blur(15px);
+    padding:3rem;
+    box-shadow:0px 0px 3px rgba(110, 198, 255, 0.3);
+    max-width:400px;
+    min-width:250px;
+    width:90%;
+    text-decoration: none;
+    border:none;
+    box-sizing:border-box;
+    transition:170ms;
+}
+.skills:hover{
+    box-shadow:0px 0px 10px 25px rgba(110, 198, 255, 0.3);
+    transform:scale(1.06);
+    border-color: #6EC6FF;
+    cursor:default;
+}
+#hhh2{
+    scroll-margin-top: 90px;
+}
+dt{
+    font-family:"Anton", sans-serif;
+    font-weight:500;
+    font-size:large;
+}
+dd{
+    font-family:"Anton", sans-serif;
+    font-weight:400;
+    font-size:large;
+    margin:0px -10px;
+}
+.card-container, .card-container2, .card-container3{
+    perspective:1000px;
+}
+#cards{
+    display:flex;
+    gap:90px;
+    margin:0px 40px;
+    position:relative;
+    top:280px;
+    left:50px;
+    transition:120ms;
+    border:#6EC6FF;
+}
+.card{
+    width:300px;
+    height:400px;
+    position:relative;
+    transform-style:preserve-3d;
+    transition:transform .6s;
+    cursor:default;
+    box-shadow:8px 13px 10px rgba(110, 198, 255, 0.3);
+    border-radius:25px;
+}
+.card:hover{
+    transform:rotateY(180deg);
+    box-shadow:-8px 13px 10px rgba(110, 198, 255, 0.3);
+}
+.front,
+.back{
+    position:absolute;
+    inset:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:40px;
+    color:#1F2937;
+    border-radius:25px;
+    backface-visibility:hidden;
+    -webkit-backface-visibility:hidden;
+}
+.front{
+    background:linear-gradient(45deg, #F5F7FA,#87CEEB);
+}
+.back{
+    background:linear-gradient(135deg, #87CEEB,#F5F7FA);
+    transform:rotateY(180deg);
+}
+.backh1{
+    font-family:"Anton", sans-serif;
+    font-size:30px;
+}
+.backinfo{
+    margin:0px 40px;
+    justify-content:center;
+    overflow:auto;
+    max-height:80%;
+    font-family:"Anton", sans-serif;
+    font-size:18px;
+}
+/* =====================================
+   CONTACT
+===================================== */
+.contact{
+    margin:460px 425px;
+    background-color:#87CEEB;
+    border-radius:30px;
+    backdrop-filter:blur(15px);
+    padding:2rem;
+    box-shadow:0px 0px 3px rgba(110, 198, 255, 0.3);
+    max-width:400px;
+    min-width:250px;
+    width:90%;
+    text-decoration: none;
+    border:none;
+    box-sizing:border-box;
+    transition:170ms;
+}
+.contact:hover{
+    box-shadow:0px 0px 10px 25px rgba(110, 198, 255, 0.3);
+    transform:scale(1.06);
+    border-color: #6EC6FF;
+    cursor:default;
+}
+#hhh3{
+    scroll-margin-top: 90px;
+}
+/* =====================================
+   BOTTON
+===================================== */
+.dark {
+    background-color: #000000;
+}
+.dark nav {
+    background-color: #1F2937;
+}
+.dark nav button{
+    background-color: #F5F7FA;
+}
+.dark .hero-intro,
+.dark .about,
+.dark .skills,
+.dark .contact {
+    background-color: rgba(31, 41, 55, 0.8);
+}
+.dark .front {
+    color: #F5F7FA;
+    background: linear-gradient(45deg, #1F2937, #374151);
+}
+.dark .back {
+    color: #F5F7FA;
+    background: linear-gradient(135deg, #374151, #1F2937);
+}
+.option{
+    background-color: #1F2937;
+    color: #F5F7FA;
+}
+.dark a,
+.dark h1,
+.dark h2,
+.dark p,
+.dark dt,
+.dark dd {
+    color: #F5F7FA;
+}
+.dark nav a:hover,
+.dark #choice:hover{
+    color:#aa9fda;
+    border-color: #aa9fda;
+}
+.dark .card{
+    box-shadow:8px 13px 10px #aa9fda;
+}
+.dark .card:hover{
+    box-shadow:-8px 13px 10px #aa9fda;
+}
+.dark .hero-intro:hover,
+.dark .about:hover,
+.dark .contact:hover,
+.dark .skills:hover{
+    box-shadow:0px 0px 10px 25px #aa9fda;
+}
